@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+
+.monster-box {
+  color: #fff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.pic {
+  background-color: antiquewhite;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.attribute {
+  font-weight: 300;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  margin-top: 2em;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bigbold {
+  font-weight: 600;
+}
