@@ -38,3 +38,9 @@
 .bigbold {
   font-weight: 600;
 }
+
+.accordion {
+  background-color: #c43ad6;
+  display: flex;
+  flex-direction: row;
+}

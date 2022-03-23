@@ -1,6 +1,8 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import './SingerStyles.css';
+import Unmask from '../Unmask/Unmask';
+import { Accordion, AccordionPanel, Box, Text } from 'grommet';
 
 const SINGERS = gql`
   {
@@ -17,6 +19,16 @@ const SINGERS = gql`
     }
   }
 `;
+
+// function Unmasks() {
+//   const { loading, error, data } = useQuery(SINGERS);
+
+//   return (
+//     <div key={id}>
+//       <button className='btn'>Unmask {maskedname} </button>
+//     </div>
+//   );
+// }
 
 export default function MaskedSingers() {
   const { loading, error, data } = useQuery(SINGERS);
@@ -47,13 +59,20 @@ export default function MaskedSingers() {
         </p>
         <p className='attribute'>Debut Season: {season}</p>
         <p className='attribute'>Occupation: {occupation} </p>
-        <p className='attribute'>Unmasked: {contestant} </p>
         <p className='attribute'>Winner??: {winner} </p>
         <p className='attribute'>Dated Voted Off: {datevotedoff} </p>
-        <p className='attribute'>Who is that?:</p>
-        <p className='attribute'>
-          <img src={unmaskedimageurl} alt='img' className='pic'></img>
-        </p>
+
+        <Accordion>
+          <AccordionPanel label='Unmask This Singer!' className='accordion'>
+            <Box pad='medium'>
+              <Text>{contestant}</Text>
+              <p className='attribute'>
+                <img src={unmaskedimageurl} alt='img' className='pic'></img>
+              </p>
+            </Box>
+          </AccordionPanel>
+        </Accordion>
+        {/* <button className='btn'>Unmask {maskedname}! </button> */}
       </div>
     )
   );
