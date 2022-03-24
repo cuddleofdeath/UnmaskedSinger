@@ -17,8 +17,8 @@
   margin-top: 2em;
   margin-bottom: 2em;
   display: block;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 250px;
+  max-width: 250px;
 }
 
 .attribute {
@@ -45,4 +45,12 @@
 
 .accordion {
   background-color: #c43ad6;
+}
+
+.card-text {
+  display: flex;
+  font-size: 0.75em;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
 }

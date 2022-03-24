@@ -83,7 +83,12 @@ export default function MaskedSingers() {
                 alignSelf='center'
               >
                 <Box pad='large' flex='true'>
-                  <Text>{contestant}</Text>
+                  <Text>
+                    <p className='card-text'>Name: {contestant} </p>{' '}
+                    <p className='card-text'>Season Debut: {season}</p>
+                    <p className='card-text'>Occupation: {occupation} </p>{' '}
+                    <p className='card-text'>Date Voted Off: {datevotedoff} </p>
+                  </Text>
                   <p className='attribute'>
                     <img src={unmaskedimageurl} alt='img' className='pic'></img>
                   </p>
