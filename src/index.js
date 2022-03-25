@@ -4,6 +4,7 @@ import { ApolloProvider } from '@apollo/client';
 import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
 import './index.css';
 import MaskedSingers from './components/MaskedSingers/MaskedSingers';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -14,7 +15,8 @@ const client = new ApolloClient({
 
 const App = () => (
   <ApolloProvider client={client}>
-    <MaskedSingers />
+    <NavigationBar />
+    <MaskedSingers className='content' />
   </ApolloProvider>
 );
 
