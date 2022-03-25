@@ -89,3 +89,9 @@ For now, consider this the beginning of my project.
 # The goal
 
 The goal is to complete the hackathon with a functioning project where the user can browse Masked Singer data in a fun way!
+
+## Credits:
+
+This project incorporates icons from react-icons, specifically:
+Game Icons (https://game-icons.net/)
+CC by 3.0 license
