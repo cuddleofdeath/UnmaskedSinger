@@ -87,6 +87,7 @@ export default function MaskedSingers() {
                     <p className='card-text'>Season Debut: {season}</p>
                     <p className='card-text'>Occupation: {occupation} </p>{' '}
                     <p className='card-text'>Date Voted Off: {datevotedoff} </p>
+                    <p className='card-text'>Winner: {winner} </p>
                   </Text>
                   <p className='attribute'>
                     <img src={unmaskedimageurl} alt='img' className='pic'></img>
