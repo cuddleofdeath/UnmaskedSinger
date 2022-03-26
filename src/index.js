@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { ApolloProvider } from '@apollo/client';
 import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
 import './index.css';
-import MaskedSingers from './components/MaskedSingers/MaskedSingers';
+import MaskedSingers from './components/MaskedSingers/Season1/MaskedSingers';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 
 const client = new ApolloClient({
@@ -16,6 +16,7 @@ const client = new ApolloClient({
 const App = () => (
   <ApolloProvider client={client}>
     <NavigationBar />
+
     <MaskedSingers className='content' />
   </ApolloProvider>
 );

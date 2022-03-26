@@ -28,6 +28,9 @@
   margin-top: 2em;
 }
 
+.szn {
+  color: #fff;
+}
 .text-gradient {
   background: linear-gradient(to right, #30cfd0, #c43ad6);
   -webkit-background-clip: text;

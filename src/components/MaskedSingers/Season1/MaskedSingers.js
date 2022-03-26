@@ -1,5 +1,11 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
+import {
+  SINGERS,
+  SINGERS_1,
+  SINGERS_2,
+  SINGERS_3,
+} from '../../Fragments/Fragments';
 import './SingerStyles.css';
 import {
   Grommet,
@@ -12,24 +18,8 @@ import {
   Box,
 } from 'grommet';
 
-const SINGERS = gql`
-  {
-    MaskedSingers {
-      contestant
-      datevotedoff
-      id
-      maskedimageurl
-      maskedname
-      occupation
-      season
-      unmaskedimageurl
-      winner
-    }
-  }
-`;
-
 export default function MaskedSingers() {
-  const { loading, error, data } = useQuery(SINGERS);
+  const { loading, error, data } = useQuery(SINGERS_1);
 
   if (loading) return <p className='loading'>Loading...</p>;
   if (error) return <p className='error'>Error 😑</p>;
@@ -47,6 +37,7 @@ export default function MaskedSingers() {
       winner,
     }) => (
       <div key={id} className='content'>
+        <h4 className='szn'>Season {season}</h4>
         <Grommet>
           <Card
             margin={{ bottom: 'large' }}

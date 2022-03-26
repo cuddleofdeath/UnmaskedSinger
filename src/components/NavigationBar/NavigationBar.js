@@ -9,7 +9,7 @@ function NavigationBar() {
       <Navbar bg='dark' fixed='top'>
         <Navbar.Brand className='brand'>
           <GiCarnivalMask className='icon' />
-          <h7 className='logo'> The Unmasked Singer</h7>
+          <h3 className='logo'> The Unmasked Singer</h3>
         </Navbar.Brand>
       </Navbar>
     </div>
