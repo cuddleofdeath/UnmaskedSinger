@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: row;
 }
@@ -23,4 +23,29 @@
   padding-left: 5em;
   max-width: 3em;
   font-size: 1em;
+} */
+
+Navbar {
+  z-index: 199;
+}
+.content {
+  padding: 12px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 1em;
+}
+
+.logo {
+  font-size: 2em;
+  margin-top: -0.35em;
+}
+
+text {
+  font-size: 1.3em;
+  margin-left: 0.4em;
+}
+
+.navitem {
+  font-size: 1.65em;
+  margin-top: 0.03em;
 }

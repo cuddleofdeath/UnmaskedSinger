@@ -1,31 +1,68 @@
-import { Navbar } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
 import './NavigationBar.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { GiCarnivalMask } from 'react-icons/gi';
-import { BsArrowReturnRight } from 'react-icons/bs';
-import { Link, NavLink } from 'react-router-dom';
 
 function NavigationBar() {
   return (
-    <div className='Navbar'>
-      <Navbar bg='dark' fixed='top'>
-        <Navbar.Brand className='brand'>
-          <h3>
-            <GiCarnivalMask className='icon' />
-            <logo className='logo'>The Unmasked Singer</logo>{' '}
-            <ul className='link'>
-              {' '}
-              <BsArrowReturnRight className='icon' />
-              {'  '}
-              <a href='/season1'>Season 1</a> | <a href='/season2'>Season 2</a>{' '}
-              | <a href='/season3'>Season 3</a> |{' '}
-              <a href='/season2'>Season 4</a> | <a href='/season3'>Season 5</a>{' '}
-              | <a href='/season2'>Season 6</a> |{' '}
-              <a href='/season3'>Season 7</a>
-            </ul>
-          </h3>
+    <div className='NavigationBar'>
+      <Navbar bg='dark' variant='dark' fixed='top' expand='sm' collapseOnSelect>
+        {/* //brand is a container that's specific to logo related uses, it can be a link (can use a href) */}
+
+        <Navbar.Brand className='logo'>
+          <GiCarnivalMask className='logo' />
+          <text>The Unmasked Singer</text>
         </Navbar.Brand>
+
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav bg='dark' variant='dark'>
+            <NavDropdown title='Seasons' menuVariant='dark' className='navitem'>
+              <NavDropdown.Item href='seasons/season1' className='navitem'>
+                Season 1
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season2' className='navitem'>
+                Season 2
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season3' className='navitem'>
+                Season 3
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season4' className='navitem'>
+                Season 4
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season5' className='navitem'>
+                Season 5
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season6' className='navitem'>
+                Season 6
+              </NavDropdown.Item>
+              <NavDropdown.Item href='seasons/season7' className='navitem'>
+                Season 7
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href='seasons/seasonall'>
+                All Seasons
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href='test' className='navitem'>
+              Credits
+            </Nav.Link>
+            <Nav.Link
+              href='https://github.com/cuddleofdeath/UnmaskedSinger'
+              className='navitem'
+            >
+              GitHub
+            </Nav.Link>
+            <Nav.Link href='test3' className='navitem'>
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
+      <div className='content'>
+        Welcome to The Unmasked Singer! Simply click on the photo of the singer
+        that you wish to unmask (Warning: SPOILERS!)
+      </div>
     </div>
   );
 }
