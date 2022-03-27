@@ -1,11 +1,12 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import {
   SINGERS,
   SINGERS_1,
   SINGERS_2,
   SINGERS_3,
 } from '../../Fragments/Fragments';
+import { singersList, seasonList } from '../../PickSeason/PickSeason';
 import './SingerStyles.css';
 import {
   Grommet,
@@ -37,7 +38,7 @@ export default function MaskedSingers() {
       winner,
     }) => (
       <div key={id} className='content'>
-        <h4 className='szn'>Season {season}</h4>
+        <h4 className='szn'>{season}</h4>
         <Grommet>
           <Card
             margin={{ bottom: 'large' }}

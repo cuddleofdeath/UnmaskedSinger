@@ -1,5 +1,4 @@
 .navbar {
-  background-color: antiquewhite;
   display: flex;
   flex-direction: row;
 }
@@ -18,4 +17,10 @@
 
 .logo {
   padding-left: 1em;
+}
+
+.link {
+  padding-left: 5em;
+  max-width: 3em;
+  font-size: 1em;
 }
