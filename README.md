@@ -95,3 +95,6 @@ The goal is to complete the hackathon with a functioning project where the user 
 This project incorporates icons from react-icons, specifically:
 Game Icons (https://game-icons.net/)
 CC by 3.0 license
+
+I created my navbar with the help of this tutorial from 'Masteryst' on YouTube from this video:
+https://www.youtube.com/watch?v=-HEjsVkfjOk
