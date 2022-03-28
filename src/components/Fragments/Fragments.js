@@ -63,3 +63,51 @@ export const SINGERS_3 = gql`
     }
   }
 `;
+
+export const SINGERS_4 = gql`
+  {
+    MaskedSingers(where: { season: { _eq: "4" } }) {
+      contestant
+      datevotedoff
+      id
+      maskedimageurl
+      maskedname
+      occupation
+      season
+      unmaskedimageurl
+      winner
+    }
+  }
+`;
+
+export const SINGERS_5 = gql`
+  {
+    MaskedSingers(where: { season: { _eq: "5" } }) {
+      contestant
+      datevotedoff
+      id
+      maskedimageurl
+      maskedname
+      occupation
+      season
+      unmaskedimageurl
+      winner
+    }
+  }
+`;
+
+export const SINGERS_6 = gql`
+  {
+    MaskedSingers(where: { season: { _eq: "6" } }) {
+      contestant
+      datevotedoff
+      id
+      maskedimageurl
+      maskedname
+      occupation
+      season
+      unmaskedimageurl
+      winner
+    }
+  }
+`;
