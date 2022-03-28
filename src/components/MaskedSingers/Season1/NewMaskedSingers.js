@@ -81,7 +81,7 @@ export default function BasicCard() {
             </Typography>
             {/* <Typography sx={{ mb: 1.5 }} color='text.secondary'>
             adjective
-          </Typography> */}
+          </Typography>f */}
             <Typography variant='body2'>
               Who could {maskedname} be?
               <br />
