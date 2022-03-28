@@ -48,7 +48,7 @@ export default function BasicCard() {
     setExpanded(!expanded(itemID));
   };
 
-  const { loading, error, data } = useQuery(SINGERS_1);
+  const { loading, error, data } = useQuery(SINGERS);
 
   if (loading) return <p className='loading'>Loading...</p>;
   if (error) return <p className='error'>Error 😑</p>;
