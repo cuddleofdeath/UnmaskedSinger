@@ -98,3 +98,5 @@ CC by 3.0 license
 
 I created my navbar with the help of this tutorial from 'Masteryst' on YouTube from this video:
 https://www.youtube.com/watch?v=-HEjsVkfjOk
+
+I created the cards using MaterialUI's documentation. (mui.com)
