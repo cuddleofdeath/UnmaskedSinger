@@ -5,6 +5,9 @@ import {
   SINGERS_1,
   SINGERS_2,
   SINGERS_3,
+  SINGERS_4,
+  SINGERS_5,
+  SINGERS_6,
 } from '../../Fragments/Fragments';
 import { singersList, seasonList } from '../../PickSeason/PickSeason';
 import './SingerStyles.css';
@@ -20,7 +23,7 @@ import {
 } from 'grommet';
 
 export default function MaskedSingers() {
-  const { loading, error, data } = useQuery(SINGERS_1);
+  const { loading, error, data } = useQuery(SINGERS_4);
 
   if (loading) return <p className='loading'>Loading...</p>;
   if (error) return <p className='error'>Error 😑</p>;
