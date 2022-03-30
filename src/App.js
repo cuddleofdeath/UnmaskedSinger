@@ -1,6 +1,6 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
-import Season1 from './components/MaskedSingers/Season 1/Season 1';
+import Season1 from './components/MaskedSingers/Season 1/Season1';
 // import './App.css';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import MainPage from './components/MaskedSingers/MainPage/MainPage';
@@ -10,7 +10,7 @@ import Season2 from './components/MaskedSingers/Season 2/Season2';
 import Season3 from './components/MaskedSingers/Season 3/Season3';
 import Season4 from './components/MaskedSingers/Season 4/Season4';
 import Season5 from './components/MaskedSingers/Season 5/Season5';
-import Season6 from './components/MaskedSingers/Season 6/Season 6';
+import Season6 from './components/MaskedSingers/Season 6/Season6';
 
 function App() {
   return (
