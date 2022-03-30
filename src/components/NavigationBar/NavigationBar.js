@@ -18,31 +18,29 @@ function NavigationBar() {
         <Navbar.Collapse>
           <Nav bg='dark' variant='dark'>
             <NavDropdown title='Seasons' menuVariant='dark' className='navitem'>
-              <NavDropdown.Item href='seasons/season1' className='navitem'>
+              <NavDropdown.Item href='/season1' className='navitem'>
                 Season 1
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season2' className='navitem'>
+              <NavDropdown.Item href='/season2' className='navitem'>
                 Season 2
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season3' className='navitem'>
+              <NavDropdown.Item href='/season3' className='navitem'>
                 Season 3
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season4' className='navitem'>
+              <NavDropdown.Item href='/season4' className='navitem'>
                 Season 4
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season5' className='navitem'>
+              <NavDropdown.Item href='/season5' className='navitem'>
                 Season 5
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season6' className='navitem'>
+              <NavDropdown.Item href='/season6' className='navitem'>
                 Season 6
               </NavDropdown.Item>
-              <NavDropdown.Item href='seasons/season7' className='navitem'>
+              <NavDropdown.Item href='/season7' className='navitem'>
                 Season 7
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href='seasons/seasonall'>
-                All Seasons
-              </NavDropdown.Item>
+              <NavDropdown.Item href='/seasonall'>All Seasons</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='test' className='navitem'>
               Credits
@@ -59,10 +57,7 @@ function NavigationBar() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className='content'>
-        Welcome to The Unmasked Singer! Simply click on the photo of the singer
-        that you wish to unmask (Warning: SPOILERS!)
-      </div>
+      <div className='content'></div>
     </div>
   );
 }
