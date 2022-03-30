@@ -111,3 +111,19 @@ export const SINGERS_6 = gql`
     }
   }
 `;
+
+export const SINGERS_7 = gql`
+  {
+    MaskedSingers(where: { season: { _eq: "6" } }) {
+      contestant
+      datevotedoff
+      id
+      maskedimageurl
+      maskedname
+      occupation
+      season
+      unmaskedimageurl
+      winner
+    }
+  }
+`;
