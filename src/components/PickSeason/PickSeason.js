@@ -4,6 +4,10 @@ import {
   SINGERS_1,
   SINGERS_2,
   SINGERS_3,
+  SINGERS_4,
+  SINGERS_5,
+  SINGERS_6,
+  SINGERS_7,
   SINGERS,
 } from '../Fragments/Fragments';
 
@@ -12,6 +16,10 @@ export const singersList = [
   { 1: SINGERS_1 },
   { 2: SINGERS_2 },
   { 3: SINGERS_3 },
+  { 4: SINGERS_4 },
+  { 5: SINGERS_5 },
+  { 6: SINGERS_6 },
+  { 7: SINGERS_7 },
 ];
 
 export const seasonList = [
