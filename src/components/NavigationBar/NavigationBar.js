@@ -7,8 +7,6 @@ function NavigationBar() {
   return (
     <div className='NavigationBar'>
       <Navbar bg='dark' variant='dark' fixed='top' expand='sm' collapseOnSelect>
-        {/* //brand is a container that's specific to logo related uses, it can be a link (can use a href) */}
-
         <Navbar.Brand className='logo'>
           <GiCarnivalMask className='logo' />
           <text>The Unmasked Singer</text>
@@ -39,8 +37,6 @@ function NavigationBar() {
               <NavDropdown.Item href='/season7' className='navitem'>
                 Season 7
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href='/seasonall'>All Seasons</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='test' className='navitem'>
               Credits
