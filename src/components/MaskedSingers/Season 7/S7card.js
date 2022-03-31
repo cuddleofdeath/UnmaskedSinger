@@ -1,12 +1,12 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { SINGERS_6 } from '../../Fragments/Fragments';
+import { SINGERS_7 } from '../../Fragments/Fragments';
 import { Typography } from 'antd';
 
 import Collapsible from 'react-collapsible';
 
 export default function S7card(props) {
-  const { loading, error, data } = useQuery(SINGERS_6);
+  const { loading, error, data } = useQuery(SINGERS_7);
 
   return data.MaskedSingers.map(
     ({

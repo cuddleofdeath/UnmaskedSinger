@@ -1,0 +1,24 @@
+.mainpage {
+  text-align: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.credits {
+  text-align: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.credtitle {
+  font-weight: 600;
+  margin-bottom: -0.5em;
+}
+
+.credcontent {
+  margin-bottom: -0.5em;
+}
+
+.ty {
+  margin-top: 1em;
+}

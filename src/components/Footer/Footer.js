@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import './Footer.css';
 
 function Copyright() {
   return (
@@ -42,7 +43,7 @@ export default function Footer() {
               : theme.palette.grey[800],
         }}
       >
-        <Container maxWidth='lg'>
+        <Container maxWidth='lg' className='footer'>
           <Copyright />
         </Container>
       </Box>

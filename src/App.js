@@ -9,6 +9,8 @@ import Season4 from './components/MaskedSingers/Season 4/Season4';
 import Season5 from './components/MaskedSingers/Season 5/Season5';
 import Season6 from './components/MaskedSingers/Season 6/Season6';
 import Season7 from './components/MaskedSingers/Season 7/Season7';
+import Credits from './components/MaskedSingers/MainPage/Credits';
+import Contact from './components/MaskedSingers/MainPage/Contact';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path='/season5' element={<Season5 />} />
         <Route path='/season6' element={<Season6 />} />
         <Route path='/season7' element={<Season7 />} />
+        <Route path='/credits' element={<Credits />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

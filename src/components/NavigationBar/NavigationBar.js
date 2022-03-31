@@ -7,7 +7,7 @@ function NavigationBar() {
   return (
     <div className='NavigationBar'>
       <Navbar bg='dark' variant='dark' fixed='top' expand='sm' collapseOnSelect>
-        <Navbar.Brand className='logo'>
+        <Navbar.Brand className='logo' href='/'>
           <GiCarnivalMask className='logo' />
           <text>The Unmasked Singer</text>
         </Navbar.Brand>
@@ -38,7 +38,7 @@ function NavigationBar() {
                 Season 7
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href='test' className='navitem'>
+            <Nav.Link href='/credits' className='navitem'>
               Credits
             </Nav.Link>
             <Nav.Link
@@ -47,7 +47,7 @@ function NavigationBar() {
             >
               GitHub
             </Nav.Link>
-            <Nav.Link href='test3' className='navitem'>
+            <Nav.Link href='/contact' className='navitem'>
               Contact
             </Nav.Link>
           </Nav>

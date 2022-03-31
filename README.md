@@ -99,6 +99,6 @@ CC by 3.0 license
 I created my navbar with the help of this tutorial from 'Masteryst' on YouTube from this video:
 https://www.youtube.com/watch?v=-HEjsVkfjOk
 
-I also used a ton of the documentation for mui (MaterialUI) and referenced many of their examples when using their components!
+I also used a ton of the documentation for mui (MaterialUI) and referenced many of their examples when using some of their components!
 
 I found this video extremely helpful for getting my cards stacked in a grid: https://www.youtube.com/watch?v=4KxHcbQ8GYQ
